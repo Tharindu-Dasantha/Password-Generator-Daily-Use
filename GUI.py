@@ -15,8 +15,13 @@ def GUI():
     TitleLable = ctk.CTkLabel(Titleframe, text="Password Generator", font=("Arial", 24), justify="center", pady=20)
     TitleLable.pack()
     Titleframe.pack()
+    
     # input frame
     Inputframe = ctk.CTkFrame(window, width=600, height=300)
+    LengthLabel = ctk.CTkLabel(Inputframe, text="Password length: ", font=("Arial", 14), justify="left", pady=10, padx=20)
+    LengthInput = ctk.CTkEntry(Inputframe, width=200, font=("Arial", 14))
+    LengthLabel.pack(side="left")
+    LengthInput.pack(side="right")
     Inputframe.pack()
     # checkbox frame
     
